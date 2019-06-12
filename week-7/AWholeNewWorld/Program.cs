@@ -33,14 +33,6 @@ namespace AWholeNewWorld
       }
 
       Console.WriteLine("Woohoo!!!");
-
-
-
-
-
-
-
-
     }
   }
 }
