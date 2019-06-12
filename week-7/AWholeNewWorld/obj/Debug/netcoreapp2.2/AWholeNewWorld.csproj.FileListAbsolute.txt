@@ -1,0 +1,11 @@
+/Users/dawng.ribeiro/sdg/unit-3/week-7/AWholeNewWorld/obj/Debug/netcoreapp2.2/AWholeNewWorld.csprojAssemblyReference.cache
+/Users/dawng.ribeiro/sdg/unit-3/week-7/AWholeNewWorld/obj/Debug/netcoreapp2.2/AWholeNewWorld.csproj.CoreCompileInputs.cache
+/Users/dawng.ribeiro/sdg/unit-3/week-7/AWholeNewWorld/obj/Debug/netcoreapp2.2/AWholeNewWorld.AssemblyInfoInputs.cache
+/Users/dawng.ribeiro/sdg/unit-3/week-7/AWholeNewWorld/obj/Debug/netcoreapp2.2/AWholeNewWorld.AssemblyInfo.cs
+/Users/dawng.ribeiro/sdg/unit-3/week-7/AWholeNewWorld/bin/Debug/netcoreapp2.2/AWholeNewWorld.deps.json
+/Users/dawng.ribeiro/sdg/unit-3/week-7/AWholeNewWorld/bin/Debug/netcoreapp2.2/AWholeNewWorld.runtimeconfig.json
+/Users/dawng.ribeiro/sdg/unit-3/week-7/AWholeNewWorld/bin/Debug/netcoreapp2.2/AWholeNewWorld.runtimeconfig.dev.json
+/Users/dawng.ribeiro/sdg/unit-3/week-7/AWholeNewWorld/bin/Debug/netcoreapp2.2/AWholeNewWorld.dll
+/Users/dawng.ribeiro/sdg/unit-3/week-7/AWholeNewWorld/bin/Debug/netcoreapp2.2/AWholeNewWorld.pdb
+/Users/dawng.ribeiro/sdg/unit-3/week-7/AWholeNewWorld/obj/Debug/netcoreapp2.2/AWholeNewWorld.dll
+/Users/dawng.ribeiro/sdg/unit-3/week-7/AWholeNewWorld/obj/Debug/netcoreapp2.2/AWholeNewWorld.pdb
