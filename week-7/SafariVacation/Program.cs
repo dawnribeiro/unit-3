@@ -39,8 +39,13 @@ namespace SafariVacation
         db.SaveChanges();
         Console.WriteLine("Wow! What was your favorite location?");
         input = Console.ReadLine();
-        var location = db.AnimalsSeen.Where(w => w.LocationOfLastSeen == input);
-        Console.WriteLine($"You saw {location}");
+        var favePlace = db.AnimalsSeen.Where(seen => seen.LocationOfLastSeen == input).OrderBy(seen => seen.Species);
+        foreach (var seen in favePlace)
+
+        {
+          Console.WriteLine($"You saw {favePlace} while you were there");
+        }
+
 
       }
 
