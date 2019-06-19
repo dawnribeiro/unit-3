@@ -15,13 +15,6 @@ namespace dawns_shop
     public static void Main(string[] args)
     {
       CreateWebHostBuilder(args).Build().Run();
-      {
-        var db = new DatabaseContext();
-        var allPlants = db.Plants.OrderBy(plant => plant.name);
-        foreach (var plant in allPlants) ;
-        Console.WriteLine(allPlants);
-        db.SaveChanges();
-      }
     }
 
     public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
