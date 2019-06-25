@@ -48,13 +48,9 @@ export class NavMenu extends Component {
             >
               <ul className="navbar-nav flex-grow">
                 <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/">
-                    Home
-                  </NavLink>
-                </NavItem>
-                <NavItem>
                   Search
                   <input type="text" placeholder="Keyword" />
+                  <input type="submit" value="Submit" />
                 </NavItem>
               </ul>
             </Collapse>
