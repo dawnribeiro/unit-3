@@ -3,7 +3,8 @@ using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace dawns_shop
+
+namespace stack_overflow
 {
   public partial class DatabaseContext : DbContext
   {
@@ -29,7 +30,7 @@ namespace dawns_shop
       {
         var envConn = Environment.GetEnvironmentVariable("DATABASE_URL");
 
-        var conn = "server=localhost;database=Plants";
+        var conn = "server=localhost;database=StackOverflow";
         if (envConn != null)
         {
           conn = ConvertPostConnectionToConnectionString(envConn);
@@ -39,11 +40,10 @@ namespace dawns_shop
     }
 
 
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
       modelBuilder.HasAnnotation("ProductVersion", "2.2.0-rtm-35687");
     }
-    public DbSet<dawns_shop.Model.Plant> Plants { get; set; }
-    public DbSet<dawns_shop.Model.Location> Locations { get; set; }
   }
 }

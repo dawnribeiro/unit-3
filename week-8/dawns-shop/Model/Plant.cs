@@ -11,5 +11,9 @@ namespace dawns_shop.Model
     public int NumberInStock { get; set; }
     public float Price { get; set; }
     public DateTime DateOfOrder { get; set; } = DateTime.Now;
+
+    public int? LocationId { get; set; }
+
+    public Location location { get; set; }
   }
 }

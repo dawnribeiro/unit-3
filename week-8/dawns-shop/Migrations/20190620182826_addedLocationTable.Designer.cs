@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using dawns_shop;
@@ -9,9 +10,10 @@ using dawns_shop;
 namespace dawns_shop.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20190620182826_addedLocationTable")]
+    partial class addedLocationTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,17 +28,11 @@ namespace dawns_shop.Migrations
 
                     b.Property<string>("Address");
 
-                    b.Property<int>("ItemId");
-
                     b.Property<string>("ManagerName");
 
                     b.Property<string>("PhoneNumber");
 
-                    b.Property<int?>("locationId");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("locationId");
 
                     b.ToTable("Locations");
                 });
@@ -47,8 +43,6 @@ namespace dawns_shop.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("DateOfOrder");
-
-                    b.Property<int?>("LocationId");
 
                     b.Property<string>("Name");
 
@@ -62,23 +56,7 @@ namespace dawns_shop.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LocationId");
-
                     b.ToTable("Plants");
-                });
-
-            modelBuilder.Entity("dawns_shop.Model.Location", b =>
-                {
-                    b.HasOne("dawns_shop.Model.Location", "location")
-                        .WithMany()
-                        .HasForeignKey("locationId");
-                });
-
-            modelBuilder.Entity("dawns_shop.Model.Plant", b =>
-                {
-                    b.HasOne("dawns_shop.Model.Location", "location")
-                        .WithMany()
-                        .HasForeignKey("LocationId");
                 });
 #pragma warning restore 612, 618
         }
