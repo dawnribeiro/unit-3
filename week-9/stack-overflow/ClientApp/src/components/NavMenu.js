@@ -48,9 +48,12 @@ export class NavMenu extends Component {
             >
               <ul className="navbar-nav flex-grow">
                 <NavItem>
-                  Search
-                  <input type="text" placeholder="Keyword" />
-                  <input type="submit" value="Submit" />
+                  <input
+                    type="text"
+                    placeholder="Search for Keyword"
+                    className="search-input"
+                  />
+                  <input type="submit" value="Submit" className="submit-btn" />
                 </NavItem>
               </ul>
             </Collapse>

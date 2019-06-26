@@ -11,7 +11,7 @@ export class Home extends Component {
         />
         {/* <label for="question">What is your question:</label>
         <textarea id="story" name="story" rows="5" cols="33" /> */}
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" className="submit-btn" />
 
         <section className="top-questions">
           <h1>Top Questions</h1>

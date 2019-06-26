@@ -1,11 +1,40 @@
+:root {
+  font: 16px / 1 sans-serif;
+}
+
+body {
+  background-color: rgba(119, 136, 153, 0.198);
+}
+
 html {
   height: 100%;
 }
 
 .question-input {
-  height: 20rem;
+  width: 20rem;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
 }
 
 .top-questions {
-  border: solid pink 5px;
+  border: solid black 3px;
+  text-align: center;
+  background-color: rgba(119, 136, 153, 0.561);
+}
+
+ul {
+  list-style: none;
+}
+
+.search-input {
+  font-size: 1.5rem;
+}
+
+.navbar-brand {
+  font-size: 3rem;
+}
+
+.submit-btn {
+  font-size: 1.5rem;
 }
