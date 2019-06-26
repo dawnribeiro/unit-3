@@ -3,5 +3,9 @@ html {
 }
 
 .question-input {
-  width: 10rem;
+  height: 20rem;
+}
+
+.top-questions {
+  border: solid pink 5px;
 }
